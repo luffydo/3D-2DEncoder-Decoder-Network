@@ -10,12 +10,9 @@ conda activate rodnet
 ```
 
 Install pytorch.
-**Note:** If you are using Temporal Deformable Convolution (TDC), we only tested under `pytorch<=1.4` and `CUDA=10.1`. 
-Without TDC, you should be able to choose the latest versions. 
+**Note:** 
 If you met some issues with environment, feel free to raise an issue.
 ```commandline
-conda install pytorch=1.4 torchvision cudatoolkit=10.1 -c pytorch  # if using TDC
-# OR
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch  # if not using TDC
 ```
 
