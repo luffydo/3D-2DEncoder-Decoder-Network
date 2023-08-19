@@ -2,8 +2,8 @@ import os
 
 from cruw.cruw import CRUW
 
-rodnet_res_dir = '/home/zdk/RODNet-master/results/156-Multibase-Aug-noattention-nomulti-cycli-loss(max_det15,1e-5)-20230330-094658'
-convert_res_dir = '/home/zdk/RODNet-master/zip/156'
+rodnet_res_dir = '/home/zdk/RODNet-master/results/156-Multibase-Aug-noattention-nomulti-cycli-loss(max_det15,1e-5)-20230330-094658'  #your inference results
+convert_res_dir = '/home/zdk/RODNet-master/zip/156'     
 
 SEQ_NAMES = ['2019_05_28_CM1S013', '2019_05_28_MLMS005', '2019_05_28_PBMS006', '2019_05_28_PCMS004',
              '2019_05_28_PM2S012', '2019_05_28_PM2S014', '2019_09_18_ONRD004', '2019_09_18_ONRD009',
