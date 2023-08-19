@@ -3,7 +3,7 @@
 
 ## Installation
 
-Create a conda environment for RODNet. Tested under Python 3.6, 3.7, 3.8.
+Create a conda environment for 3D-2DEncoder-Decoder-Network. Tested under Python 3.6, 3.7, 3.8.
 ```commandline
 conda create -n rodnet python=3.* -y
 conda activate rodnet
@@ -27,13 +27,6 @@ cd cruw-devkit
 pip install .
 cd ..
 ```
-
-Setup RODNet package.
-```commandline
-pip install -e .
-```
-**Note:** If you are not using TDC, you can rename script `setup_wo_tdc.py` as `setup.py`, and run the above command. 
-This should allow you to use the latest cuda and pytorch version. 
 
 ## Prepare data for RODNet
 
@@ -82,16 +75,14 @@ python tools/prepare_dataset/prepare_data.py \
 ## Train models
 
 ```commandline
-python tools/train.py --config configs/<CONFIG_FILE> \
-        --data_dir data/<DATA_FOLDER_NAME> \
+python train_train.py --data_dir data/<DATA_FOLDER_NAME> \
         --log_dir checkpoints/
 ```
 
 ## Inference
 
 ```commandline
-python tools/test.py --config configs/<CONFIG_FILE> \
-        --data_dir data/<DATA_FOLDER_NAME> \
+python test_test.py --data_dir data/<DATA_FOLDER_NAME> \ 
         --checkpoint <CHECKPOINT_PATH> \
         --res_dir results/
 ```
