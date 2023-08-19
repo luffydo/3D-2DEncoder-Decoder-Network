@@ -83,3 +83,19 @@ python test_test.py --data_dir data/<DATA_FOLDER_NAME> \
         --checkpoint <CHECKPOINT_PATH> \
         --res_dir results/
 ```
+**Note:** 
+The participates need to submit their radar object detection results(--res_dir results/) for the testing set to the [evaluation server](https://codalab.lisn.upsaclay.fr/competitions/1063). The evaluation metrics include AP and AP under four different driving scenarios, i.e., parking lot (PL), campus road (CR), city street (CS), highway (HW). The main score for this challenge is the overall AP. The details of the evaluation method is mentioned in paper.
+
+The submission file should contain 10 different files for 10 testing sequences with the following names:ziptxt
+```
+    2019_05_28_CM1S013.txt
+    2019_05_28_MLMS005.txt
+    2019_05_28_PBMS006.txt
+    2019_05_28_PCMS004.txt
+    2019_05_28_PM2S012.txt
+    2019_05_28_PM2S014.txt
+    2019_09_18_ONRD004.txt
+    2019_09_18_ONRD009.txt
+    2019_09_29_ONRD012.txt
+    2019_10_13_ONRD048.txt
+```
